@@ -61,8 +61,8 @@ ABIGAILTEAMO/
 ├── styles.css          # Estilos CSS
 ├── script.js           # Lógica JavaScript
 ├── README.md           # Este archivo
-└─Abigailteamo-main.zip # Archivo original (opcional)
-```
+└─Abigailteamo-main.zip # Archivo original
+
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -169,5 +169,4 @@ Las contribuciones son bienvenidas. Por favor:
 
 Si tienes preguntas o encontras problemas, abre un issue en el repositorio.
 
----
 **te amo Abigail 📍**
