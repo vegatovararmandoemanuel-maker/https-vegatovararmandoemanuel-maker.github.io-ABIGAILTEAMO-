@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps-Coreem - Localizador de Coordenadas</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📍 Apps-Coreem</h1>
+            <p>Localizador de Coordenadas GPS</p>
+        </header>
+
+        <main>
+            <!-- Sección de Controles -->
+            <section class="controls">
+                <button id="getLocationBtn" class="btn btn-primary">
+                    📍 Obtener Mi Ubicación
+                </button>
+                <button id="clearHistoryBtn" class="btn btn-secondary">
+                    🗑️ Limpiar Historial
+                </button>
+            </section>
+
+            <!-- Sección de Información de Coordenadas -->
+            <section class="info-section">
+                <h2>Coordenadas Actuales</h2>
+                <div class="coordinates">
+                    <div class="coord-item">
+                        <label>Latitud:</label>
+                        <span id="latitude" class="value">--</span>
+                        <button class="copy-btn" data-target="latitude" title="Copiar">📋</button>
+                    </div>
+                    <div class="coord-item">
+                        <label>Longitud:</label>
+                        <span id="longitude" class="value">--</span>
+                        <button class="copy-btn" data-target="longitude" title="Copiar">📋</button>
+                    </div>
+                    <div class="coord-item">
+                        <label>Precisión:</label>
+                        <span id="accuracy" class="value">--</span>
+                    </div>
+                    <div class="coord-item">
+                        <label>Altitud:</label>
+                        <span id="altitude" class="value">--</span>
+                    </div>
+                    <div class="coord-item full-width">
+                        <label>Dirección:</label>
+                        <span id="address" class="value">Cargando...</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mapa Interactivo -->
+            <section class="map-section">
+                <h2>Mapa</h2>
+                <div id="map" class="map-container"></div>
+            </section>
+
+            <!-- Historial de Ubicaciones -->
+            <section class="history-section">
+                <h2>Historial de Ubicaciones</h2>
+                <div id="historyList" class="history-list">
+                    <p class="empty-message">No hay ubicaciones registradas</p>
+                </div>
+            </section>
+
+            <!-- Opciones Avanzadas -->
+            <section class="advanced-section">
+                <h2>Opciones Avanzadas</h2>
+                <div class="options">
+                    <button id="shareBtn" class="btn btn-info">
+                        📤 Compartir Ubicación
+                    </button>
+                    <button id="exportBtn" class="btn btn-info">
+                        📥 Exportar Datos (JSON)
+                    </button>
+                    <button id="importBtn" class="btn btn-info">
+                        📤 Importar Datos (JSON)
+                    </button>
+                    <input type="file" id="fileInput" accept=".json" style="display: none;">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Apps-Coreem © 2026 | Construido con ❤️</p>
+        </footer>
+    </div>
+
+    <!-- Modal de Información -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Información</h2>
+            <p id="modalMessage"></p>
+            <button class="btn btn-primary" onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
