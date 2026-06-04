@@ -10,7 +10,8 @@ Una aplicación web moderna para obtener, visualizar y gestionar coordenadas GPS
 - **🗺️ Mapa Interactivo**: Visualiza tu ubicación en un mapa interactivo con Leaflet
 - **📊 Información Detallada**: Latitud, longitud, precisión y altitud
 - **🔄 Geocodificación Inversa**: Convierte coordenadas a dirección legible
-- **📋 Copiar Coordenadas**: Copia fácilmente lat/lng al portapapeles
+- **📋 Copiar Coordenadas**: Copia fácilmente lat/lng al portapapelesFetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.
+Error: Multiple artifacts named "github-pages" were unexpectedly found for this workflow run. Artifact count is 2.
 - **📚 Historial**: Guarda automáticamente hasta 50 ubicaciones previas
 - **💾 Exportar/Importar**: Descarga tus datos como JSON o importa desde archivo
 - **📤 Compartir**: Comparte tu ubicación a través de Google Maps
